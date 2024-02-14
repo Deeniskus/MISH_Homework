@@ -1,7 +1,5 @@
-#include <iostream>
-using namespace std;
-#include <string>
-#include "Shotgun.cpp"
+#include "src/Shotgun.h" //Надеюсь это правильно? Тоже CLion сделал. Хотя мне кажется, что не правильно
+
 
 
 int main() {
