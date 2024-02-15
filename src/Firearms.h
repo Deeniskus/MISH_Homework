@@ -16,12 +16,14 @@ using std::string;
 class Firearms : public Weapon, public IShootable{
 public:
 
-    int chance_to_explode;
     Firearms(string name, int ammo_amount, int Chance_To_Explode) : Weapon(std::move(name), ammo_amount), chance_to_explode(Chance_To_Explode) {
     }
 
 
     void Shoot() override;
+
+private:
+    int chance_to_explode;
 
 };
 

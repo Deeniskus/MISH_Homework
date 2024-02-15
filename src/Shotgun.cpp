@@ -6,6 +6,6 @@
 
 
 void Shotgun::Shoot() {
-    ammo_amount -= 4;
+    set_ammo_amount(get_ammo_amount() - 4);
     cout << "Bang Bang Bang Bang"  << endl;
 }

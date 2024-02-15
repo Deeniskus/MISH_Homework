@@ -7,18 +7,26 @@
 
 #include <iostream>
 #include <utility>
-#include "string"
+#include <string>
 //Абстрактный класс "оружие"
 
 class Weapon {
 public:
-    std::string name;
-    int ammo_amount;
-
     Weapon(std::string Name, int Ammo_amount){
         name = std::move(Name); //Это мне посоветовал CLion, как я понял, мы "перемещаем" значение из Name в name, а не копируем, для экономии памяти?
         ammo_amount = Ammo_amount;
     }
+    int get_ammo_amount(){
+        return ammo_amount;
+    };
+    void set_ammo_amount(int value){
+        ammo_amount = value;
+    }
+
+private:
+    std::string name;
+    int ammo_amount;
+
 };
 
 
